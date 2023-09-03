@@ -1,0 +1,173 @@
+.account {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 74px 0 70px;
+  box-sizing: border-box;
+}
+
+.account__title {
+  margin: 0;
+  color: #000;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.account__form {
+  padding: 106px 0 0;
+  width: 410px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.account__form-label {
+  color: #000;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: normal;
+  display: block;
+  width: 100%;
+  position: relative;
+  padding: 17px 0 16px; 
+}
+
+.account__form-input {
+  color: #000;
+  text-align: right;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: normal;
+  border: none;
+  padding: 17px 0 16px 40px;
+  width: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid #E8E8E8;
+  background-color: transparent;
+}
+
+.account__form-input_type_latest {
+  border: none;
+}
+
+.account__form-input:focus {
+  outline: none;
+  border-bottom: 1px solid #000;
+  opacity: 0.7;
+}
+
+.account__form-button {
+  margin-top: 204px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  color: #000;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: normal;
+  transition: opacity .3s;
+  cursor: pointer;
+}
+
+.account__form-button:hover {
+  opacity: 0.8;
+}
+
+.account__exit-button {
+  margin-top: 16px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  color: #EE3465;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: normal;
+  transition: opacity .3s;
+  cursor: pointer;
+}
+
+.account__exit-link {
+  margin-top: 16px;
+  padding: 0;
+  color: #EE3465;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration: none;
+  transition: opacity .3s;
+  cursor: pointer;
+}
+
+.account__exit-link:hover {
+  opacity: 0.7;
+}
+
+.account__submit-button {
+  margin-top: 207px;
+  padding: 0;
+  max-width: 410px;
+  width: 100%;
+  min-height: 45px;
+  border-radius: 3px;
+  color: #FFF;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+  border: none;
+  background-color: #FF6838;
+  transition: opacity .3s;
+  cursor: pointer;
+}
+
+.account__submit-button:hover {
+  opacity: 0.8;
+}
+
+.account__submit-button_disabled {
+  background: #F8F8F8;
+  color: #C2C2C2;
+}
+
+@media screen and (max-width: 768px) {
+  .account {
+   padding-left: 30px;
+   padding-right: 30px;
+  }
+
+  .account__form {
+    padding-top: 79px;
+    width: calc(100% - 60px);
+  }
+  
+}
+
+@media screen and (max-width: 425px) {
+  .account {
+    padding-bottom: 40px;
+  }
+
+  .account__form {
+    padding-top: 63px;
+    width: 260px;
+  }
+
+  .account__form-button {
+    margin-top: 363px;
+    font-size: 12px;
+  }
+
+  .account__exit-link {
+    font-size: 12px;
+  }
+}

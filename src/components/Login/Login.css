@@ -1,0 +1,37 @@
+.login {
+  max-width: 396px;
+  width: 100%;
+  padding: 70px 0 70px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.login__title {
+  margin: 0;
+  padding-top: 40px;
+  color: #000;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: normal;
+}
+
+@media screen and (max-width: 768px) {
+  .login {
+    padding-top: 232px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .login {
+    height: 100vh;
+    align-items: center;
+    padding: 56px 30px 30px;
+  }
+
+  .register__title {
+    padding-top: 50px;
+    text-align: center;
+  }
+}
