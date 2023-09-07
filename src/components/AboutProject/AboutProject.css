@@ -1,0 +1,136 @@
+.project {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 110px 70px;
+}
+
+.project__title {
+  color: #000;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.88px;
+  margin: 0;
+  padding: 0 0 23px;
+  border-bottom: 1px solid #000;
+}
+
+.project__info {
+  padding-top: 70px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
+  row-gap: 26px;
+
+}
+.project__info-title {
+  margin: 0;
+  color: #000;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.8px;
+  order: -1;
+}
+
+.project__info-description {
+  margin: 0;
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.project__timeline {
+  padding-top: 110px;
+  display: grid;
+  grid-template-columns: 228px 1fr;
+  row-gap: 14px;
+}
+
+.project__timeline-item {
+  margin: 0;
+  padding: 9px 14px;
+  color: #000;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  background-color: #2BE080;
+}
+
+.project__timeline-item_color_gray {
+background-color: #F2F2F2;
+}
+
+.project__timeline-caption {
+  margin: 0;
+  color: #A0A0A0;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+}
+
+@media screen and (max-width: 768px) {
+  .project {
+    padding: 90px 50px;
+  }
+
+  .project__info {
+    column-gap: 30px;
+    row-gap: 22px;
+  }
+  .project__timeline {
+    padding-top: 93px;
+    grid-template-columns: 140px 1fr;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .project {
+    padding: 70px 18px 69px;
+  }
+  .project__title {
+    font-size: 18px;
+    letter-spacing: -0.72px;
+    padding-bottom: 28px;
+  }
+
+  .project__info {
+    padding-top: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin: 0 auto;
+    max-width: 284px;
+    align-items: center;
+  }
+
+  .project__info-title {
+    font-size: 18px;
+    letter-spacing: -0.72px;
+    order: 0;
+    margin-top: 56px;
+  }
+
+  .project__info-description { 
+    margin-top: 16px;
+    font-size: 11px;
+    line-height: 16px;
+  }
+
+  .project__timeline {
+    padding-top: 60px;
+    max-width: 284px;
+    grid-template-columns: 100px 1fr;
+    row-gap: 10px;
+    margin: 0 auto;
+  }
+
+  .project__timeline-item {
+    font-size: 11px;
+    line-height: normal;
+    padding: 11px 10px;
+  }
+}
