@@ -17,8 +17,8 @@ function MoviesCard(props) {
       <h2 className="card__title">{props.movie.nameRU}</h2>
       <p className="card__subtitle">{props.movie.duration}</p>
       {location.pathname === "/saved-movies"
-        ? <button className="card__delete-button" />
-        : <button className={`card__fav-button ${isFav ? 'card__fav-button_active' : ''}`} onClick={handleFavButton} />
+        ? <button className="card__delete-button" type="button"/>
+        : <button className={`card__fav-button ${isFav ? 'card__fav-button_active' : ''}`} onClick={handleFavButton} type="button" />
       }
     </div>
     <img className="card__image" src={props.movie.image} alt="Обложка фильма"/>

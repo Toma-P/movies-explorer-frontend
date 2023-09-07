@@ -141,12 +141,12 @@
 
 @media screen and (max-width: 768px) {
   .account {
-   padding-left: 30px;
-   padding-right: 30px;
+    padding-top: 236px;
   }
 
   .account__form {
     padding-top: 79px;
+    max-width: 410px;
     width: calc(100% - 60px);
   }
   
@@ -154,6 +154,7 @@
 
 @media screen and (max-width: 425px) {
   .account {
+    padding-top: 70px;
     padding-bottom: 40px;
   }
 

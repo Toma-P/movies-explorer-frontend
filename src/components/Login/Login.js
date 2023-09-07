@@ -4,13 +4,15 @@ import UserInfoForm from "../UserInfoForm/UserInfoForm";
 
 function Login() {
     return (
-      <section className="login">
-        <Logo />
-        <h2 className="login__title">Рады видеть!</h2>
-        <UserInfoForm buttonText={"Войти"}>
-          <p className="info-form__question">Ещё не зарегистрированы?<Link className="info-form__question-link" to="/signup">Регистрация</Link></p>
-        </UserInfoForm>
-      </section>
+      <main className="content">
+        <section className="login">
+          <Logo />
+          <h1 className="login__title">Рады видеть!</h1>
+          <UserInfoForm buttonText={"Войти"}>
+            <p className="info-form__question">Ещё не зарегистрированы?<Link className="info-form__question-link" to="/signup">Регистрация</Link></p>
+          </UserInfoForm>
+        </section>
+      </main>
     )
   }
   

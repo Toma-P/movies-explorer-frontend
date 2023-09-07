@@ -8,12 +8,14 @@ function Movies() {
   return(
     <>
       <Header />
-      <section className="movies">
-        <SearchForm />
-        <Preloader />
-        <MoviesCardList />
-        <button className="movies__button">Ещё</button>
-      </section>
+      <main className="content">
+        <section className="movies">
+          <SearchForm />
+          <Preloader />
+          <MoviesCardList />
+          <button className="movies__button" type="button">Ещё</button>
+        </section>
+      </main>
       <Footer />
     </>
   )

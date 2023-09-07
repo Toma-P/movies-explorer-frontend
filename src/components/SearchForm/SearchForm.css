@@ -97,6 +97,12 @@
   line-height: 18px;
 }
 
+.search-form__checkbox:focus + .search-form__checkbox-toggle {
+  border-radius: 20px;
+  outline: #A0A0A0 2px solid;
+  outline-offset: 3px;
+}
+
 @media screen and (max-width: 768px) {
   .search-form {
     padding: 86px 0 61px;

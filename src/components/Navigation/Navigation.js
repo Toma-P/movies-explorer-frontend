@@ -8,8 +8,8 @@ function Navigation({ isLogged, isHomepage, isClicked }) {
       <div className="navigation">
         <nav className="navigation__links">
           <NavLink className={({isActive}) => `navigation__link ${isHomepage ? 'navigation__link_homepage' : ''} ${isActive ? 'navigation__link_active' : ''}`} to="/signup">Регистрация</NavLink>
-          <NavLink className={({isActive}) => `navigation__link ${isHomepage ? 'navigation__link_homepage' : ''} ${isActive ? 'navigation__link_active' : ''}`} to="/signin">
-            <button className="navigation__link-button">Войти</button>
+          <NavLink className={({isActive}) => `navigation__link navigation__link-button ${isHomepage ? 'navigation__link_homepage' : ''} ${isActive ? 'navigation__link_active' : ''}`} to="/signin">
+            Войти
           </NavLink> 
         </nav>
       </div>
@@ -23,8 +23,9 @@ function Navigation({ isLogged, isHomepage, isClicked }) {
             <NavLink className={({isActive}) => `navigation__link navigation__link navigation__link_auth ${isHomepage ? 'navigation__link_homepage' : ''} ${isActive ? 'navigation__link_active' : ''}`} to="/movies">Фильмы</NavLink>
             <NavLink className={({isActive}) => `navigation__link navigation__link navigation__link_auth ${isHomepage ? 'navigation__link_homepage' : ''} ${isActive ? 'navigation__link_active' : ''}`} to="/saved-movies">Сохранённые фильмы</NavLink> 
           </nav>
-          <Link className={`navigation__account-link ${isHomepage ? 'navigation__account-link_homepage' : ''}`} to="/profile">Аккаунт
-            <button className="navigation__link-button navigation__link-button_auth"><img  src={accountPic} alt="Кнопка аккаунта"/></button>
+          <Link className={`navigation__account-link  ${isHomepage ? 'navigation__account-link_homepage' : ''}`} to="/profile">
+            Аккаунт
+            <img className={`navigation__account-pic ${isHomepage ? 'navigation__account-pic_homepage' : ''}`} src={accountPic} alt="Кнопка аккаунта"/>
           </Link>
         </div>
     </div>

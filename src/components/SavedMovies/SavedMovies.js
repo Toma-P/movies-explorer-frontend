@@ -7,10 +7,12 @@ function SavedMovies() {
   return(
     <>
       <Header />
-      <section className="saved-movies">
-        <SearchForm />
-        <MoviesCardList />
-      </section>
+      <main className="content">
+        <section className="saved-movies">
+          <SearchForm />
+          <MoviesCardList />
+        </section>
+      </main>
       <Footer />
     </>
   )

@@ -20,15 +20,17 @@ function Main() {
   };
 
   return(
+    <>
+    <Header />
     <main className="content">
-      <Header />
       <Promo handleScroll={handleScroll}/>
       <AboutProject scroll={scrollEffect}/>
       <Techs />
       <AboutMe />
       <Portfolio />
-      <Footer />
     </main>
+    <Footer />
+    </>
   )
 }
 
