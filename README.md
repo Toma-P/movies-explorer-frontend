@@ -14,3 +14,7 @@
 
 ### Макет
 light-5
+
+Frontend: https://tomiko.movies.nomoredomainsrocks.ru
+
+Ссылка на пулреквест: https://github.com/Toma-P/movies-explorer-frontend/pull/2
