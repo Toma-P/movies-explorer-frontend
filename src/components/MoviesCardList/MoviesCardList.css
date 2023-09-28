@@ -1,10 +1,18 @@
 .cards {
-  padding: 70px 0 80px;
+  padding: 70px 0 0;
+}
+
+.cards__message {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+  color: #A0A0A0;
 }
 
 .cards__list {
   margin: 0;
-  padding: 0;
+  padding: 0 0 80px;
   list-style-type: none;
   display: grid;
   grid-template-columns: repeat(3, minmax(339px, 364px));
@@ -12,6 +20,28 @@
   column-gap: 24px;
   row-gap: 30px;
   justify-content: center;
+}
+.cards__more-button {
+  width: 100%;
+  height: 36px;
+  display: none;
+  border-radius: 6px;
+  background-color: #F9F9F9;
+  border: none;
+  color: #000;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: normal;
+  transition: opacity .3s;
+  cursor: pointer;
+}
+
+.cards__more-button_active {
+  display: block;
+}
+.cards__more-button:hover {
+  opacity: 0.8;
 }
 
 @media screen and (max-width: 1180px) {

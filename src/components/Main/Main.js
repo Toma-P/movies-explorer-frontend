@@ -8,7 +8,7 @@ import Portfolio from "../Portfolio/Portfolio";
 import Footer from "../Footer/Footer";
 
 
-function Main() {
+function Main({loggedIn}) {
 
   const scrollEffect = useRef();
   const handleScroll = () => {
@@ -21,7 +21,7 @@ function Main() {
 
   return(
     <>
-    <Header />
+    <Header loggedIn={loggedIn}/>
     <main className="content">
       <Promo handleScroll={handleScroll}/>
       <AboutProject scroll={scrollEffect}/>
